@@ -9,7 +9,9 @@ html, body {
     height: 100%;
     font-family: 'Arial', sans-serif;
 }
-
+.container1{
+    padding: 5px;
+}
 /* Set the gallery to be a grid */
 .gallery-grid {
     display: grid;
@@ -68,13 +70,14 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 0 20px;
+     /* padding: 0 20px;  */
 }
 
 header {
     background-color: #f1730c;
     color: white;
     padding: 10px;
+    text-align: center;
     border-radius: 10px;
     margin-top:1px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -87,12 +90,12 @@ h1 {
 }
 
 .subbrand-container {
+    padding: 0 20px;
     margin-top: 40px;
 }
 
 .subbrand-image img {
     width: 80%;
-    max-width: 600px;
     border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
@@ -118,8 +121,11 @@ h1 {
 
 .about h2 {
     font-size: 28px;
-    /* color: #2C3E50; */
-    margin-bottom: 15px;
+    text-align: center;
+    margin-top: 5px;
+    
+    color: #f1730c;
+    margin-bottom: 5px;
 }
 
 .about p {
@@ -201,9 +207,9 @@ footer {
     background-color: #f1730c;
     color: white;
     padding: 20px;
-    text-align: center;
+    /* text-align: center; */
     font-size: 14px;
-    position: relative;
+    /* position: relative; */
     bottom: 0;
     width: 100%;
     margin-top: auto;
@@ -322,6 +328,9 @@ tr:hover {
 
 /* Title inside each feature card */
 .info-hed {
+    align-items: center;
+    text-align: center;
+    color: #f1730c ;
     font-size: 18px;
     font-weight: bold;
     margin-left: 10px;
@@ -360,4 +369,235 @@ tr:hover {
         font-weight: bold;
         text-transform: uppercase;
     }
+}
+/* General Footer Styling */
+.footer {
+    background-color: #282828; /* Dark background for contrast */
+    color: #fff;               /* White text for visibility */
+    padding: 30px 20px;        /*Space around the text */
+    /* text-align: center;        Centering content */
+    font-family: 'Arial', sans-serif; /* Clean, modern font */
+    border-top: 2px solid #FF7F00; /* Stylish top border */
+}
+
+/* Footer Content Styling */
+.footer-content {
+    max-width: 1000px;
+    margin: 0 2px; /* Center the footer content */
+}
+
+/* Footer Text Styling */
+.footer-text {
+    margin: 10px 0;  /* Add spacing between each paragraph */
+    font-size: 14px;  /* Adjust font size for readability */
+}
+
+/* Footer Link Styling */
+.footer-link {
+    color: #FF7F00; /* Bright orange for links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;     /* Make links stand out */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for links */
+.footer-link:hover {
+    color: #fff;  /* Change to white when hovered */
+    text-decoration: underline; /* Underline the link on hover */
+}
+
+/* Contact Info Styling */
+.contact-info {
+    text-align: left; /* Align content to the left */
+    margin-top: 20px; /* Add some space above the contact section */
+    font-size: 14px;  /* Make the text consistent with other footer text */
+    line-height: 1.6; /* Improve readability */
+}
+
+/* Styling for strong tags within contact info */
+.contact-info strong {
+    color: #FF7F00; /* Highlight labels in orange */
+}
+
+/* General Footer Styling */
+.footer-area {
+    background-color: #212121;
+    color: #fff;
+    /* padding-top: 60px; */
+    padding-bottom: 40px;
+}
+
+.footer-content-wrapper {
+    padding-top: 30px;
+}
+
+/* Footer Columns Layout */
+.footer-columns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    gap: 30px;
+}
+
+.footer-logo img {
+    max-width: 180px;
+    margin-bottom: 15px;
+}
+
+.footer-desc {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #b0b0b0;
+    margin-bottom: 20px;
+}
+
+.footer-desc strong {
+    color: #fff;
+}
+
+.footer-desc a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.footer-desc a:hover {
+    text-decoration: underline;
+}
+
+/* Social Links */
+.social-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-links ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.social-links a {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #4CAF50;
+}
+
+/* Footer Widget Section */
+.footer-widget {
+    margin-bottom: 30px;
+}
+
+.footer-widget__title {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 15px;
+    font-weight: bold;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 5px;
+}
+
+/* Footer Navigation Links */
+.footer-widget__navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-widget__navigation li {
+    margin-bottom: 10px;
+}
+
+.footer-widget__navigation a {
+    font-size: 14px;
+    color: #b0b0b0;
+    text-decoration: none;
+}
+
+.footer-widget__navigation a:hover {
+    color: #4CAF50;
+    text-decoration: underline;
+}
+
+/* Footer Bottom */
+.footer-copyright-wrapper {
+    margin-top: 40px;
+    border-top: 1px solid #4CAF50;
+    padding-top: 20px;
+}
+
+.footer-copyright-left {
+    font-size: 14px;
+}
+
+.footer-copyright-right {
+    text-align: right;
+}
+
+.footer-copyright-right__navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-copyright-right__navigation li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-copyright-right__navigation a {
+    font-size: 14px;
+    color: #b0b0b0;
+    text-decoration: none;
+}
+
+.footer-copyright-right__navigation a:hover {
+    color: #fff;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 991px) {
+    .footer-columns {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+    }
+}
+
+@media (max-width: 767px) {
+    .footer-columns {
+        grid-template-columns: 1fr; /* 1 column for mobile */
+    }
+
+    .footer-widget__title {
+        font-size: 15px;
+    }
+
+    .footer-widget__navigation a {
+        font-size: 12px;
+    }
+
+    .social-links a {
+        font-size: 18px;
+    }
+}
+.subbrand-image {
+    text-align: center; /* Centers the content inside the container */
+    margin-bottom: 20px; /* Adds space below the container */
+}
+
+.subbrand-image img {
+    display: block;  /* Makes the image a block element */
+    margin: 0 auto;  /* Horizontally centers the image */
+    max-width: 70%;
+    padding: 10px; 
+    ; /* Ensures the image is responsive */
+    height: auto;  /* Maintains aspect ratio */
+}
+
+.subbrand-image h2 {
+    margin-top: 10px;  /* Adds some space between the image and text */
+    font-size: 24px;  /* You can adjust the font size as needed */
+    color: #ff6600;  /* Sets the color of the text (you can change this) */
+    font-weight: bold;
 }
